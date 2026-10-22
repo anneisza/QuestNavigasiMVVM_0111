@@ -70,6 +70,10 @@ fun FormIsian(
                 thickness = 1.dp,
                 color = Color.Red
             )
+            OutlinedTextField(
+                value = "",
+                singleLine = true,
+            )
 
         }
     }
