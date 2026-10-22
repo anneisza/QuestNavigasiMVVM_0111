@@ -26,6 +26,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.example.praktikum5.R
 
+val Thickness = 1.dp
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun FormIsian(
@@ -55,7 +56,7 @@ fun FormIsian(
             )
             HorizontalDivider(modifier = Modifier
                 .padding(20.dp)
-                .width(250.dp), thickness = Thickness, color = Color.Red)
+                .width(250.dp), thickness = Thickness,color = Color.Red)
             Row{
                 jenisK.forEach {
                         item ->
