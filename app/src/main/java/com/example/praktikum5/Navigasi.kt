@@ -5,11 +5,12 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavController
-import androidx.navigation.NavDestination
+import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
 import com.example.praktikum5.view.FormIsian
 import com.example.praktikum5.view.TampilData
+import androidx.navigation.compose.composable
 
 enum class Navigasi {
     FormulirSaya,
@@ -18,7 +19,7 @@ enum class Navigasi {
 
 @Composable
 fun DataApp(
-    navController: NavController = rememberNavController()
+    navController: NavHostController = rememberNavController()
 ){
     Scaffold{ isiRuang ->
         NavHost(
