@@ -25,10 +25,11 @@ import com.example.praktikum5.R
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun FormIsian(
-    jenisJK: List<String> = listOf("Laki-laki", "Perempuan"),
-    OnSubmitBtnClick = () -> Unit
+    jenisK: List<String> = listOf("Laki-laki", "Perempuan"),
+    OnSubmitBtnClick: () -> Unit
 ){
-    Scaffold(modifier = Modifier,
+    Scaffold(
+        modifier = Modifier,
         {
             TopAppBar(
                 title = { Text(stringResource(id = R.string.home), color = Color.White)},
@@ -59,6 +60,7 @@ fun FormIsian(
                             selected = false,
                             onClick = {item}
                         )
+                        Text(text = item)
                     }
                 }
             }
